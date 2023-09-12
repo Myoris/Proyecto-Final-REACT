@@ -1,9 +1,12 @@
-import React from 'react'
-import Card from '../Components/Card'
+import React, { useContext } from 'react';
+import ThemeContext from './ThemeContext'; // Asume que tienes un contexto llamado ThemeContext
+import Card from '../Components/Card';
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Home = () => {
+  const { theme } = useContext(ThemeContext); // Obtener el tema actual del contexto
+
   return (
     <main className="" >
       <h1>Home</h1>

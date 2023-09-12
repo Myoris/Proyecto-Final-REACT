@@ -25,8 +25,7 @@ function App() {
                      <Route path="Detail" element ={<Detail/>}/>
                      <Route path="Favs" element ={<Favs/>}/>
                 </Route>
-              </Routes>
-          
+              </Routes>         
           </BrowserRouter>
       </div>
   );
